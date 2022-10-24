@@ -9,6 +9,25 @@ function pickRandomStudent(){
     document.querySelector('#studentName').innerText = randomStudent
 }
 
+// Roll Rudiments
+
+const rudiments = ['Single Stroke Roll', 'Single Stroke Four', 'Single Stroke Seven', 'Multiple Bounce Roll', 'Triple Stroke Roll', 'Double Stroke Roll', 'Five Stroke Roll', 'Six Stroke Roll', 'Seven Stroke Roll', 'Nine Stroke Roll', 'Ten Stroke Roll', 'Eleven Stroke Roll', 'Thirteen Stroke Roll', 'Fifteen Stroke Roll', 'Seventeen Stroke Roll', 'Single Paradiddle', 'Double Paradiddle', 'Triple Paradiddle', 'Paradiddle-diddle']
+
+document.querySelector('#rollRudimentBtn').addEventListener('click', pickRollRudiment)
+
+function pickRollRudiment(){
+    let randomRoll = rudiments[Math.floor(Math.random() * 9 + 6)]
+    document.querySelector('#rollRudimentName').innerText = randomRoll
+}
+
+// Paradiddle Rudiments
+document.querySelector('#paradiddleRudimentBtn').addEventListener('click', pickParadiddleRudiment)
+
+function pickParadiddleRudiment(){
+    let randomPara = rudiments[Math.floor(Math.random() * 4 + 15)]
+    document.querySelector('#paradiddleRudimentName').innerText = randomPara
+}
+
 // Major Scales
 
 const allMajorScales = ['F Major', 'Bb Major', 'Eb Major', 'Ab Major', 'Db Major', 'Gb Major', 'G Major', 'D Major', 'A Major', 'E Major', 'B Major', 'F# Major']
