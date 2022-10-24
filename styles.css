@@ -1,0 +1,60 @@
+html{
+    font-size: 16px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: rgba(36, 84, 197, 0.618);
+}
+
+header{
+    text-align: center;
+    color: rgba(238, 230, 230, 0.89);
+}
+
+.smallHeader{
+    height: 100px;
+}
+
+h1{
+    font-size: 3rem;
+    border-bottom: 1px solid gray;
+    margin: 25px auto 0 auto;
+    width: 50%;
+}
+
+
+
+h2{
+    font-size: 2.5rem;
+    text-decoration: underline;
+}
+
+h3{
+    font-size: 1.75rem;
+}
+
+
+.button{
+    text-align: center;
+    border: 3px solid black;
+    width: 17%;
+    height: 50px;
+    background: darkgray;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    padding: 5vw 0;
+}
+
+
+
