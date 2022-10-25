@@ -1,6 +1,6 @@
 //Random Students
 
-const students = ['Jocelyn Amezcu', 'Noah Baker', 'Dylan Bazant', 'Cameron Bianco', 'Matthew Borowski', 'Micah Carney', 'Gracie Cockrell', 'Allison Farmer', 'Anna Girman', 'Andrew Knight', 'Anna Kras', 'Ryan Lamont', 'Alex McGaha', 'Owen Minnich', 'Jillamae Monter', 'Benjamin Peters', 'Jacob Scaggs', 'Abby Sullivan', 'Patrick Sullivan', 'Max Textor', 'Christian Tortoriello']
+const students = ['Jocelyn', 'Noah', 'Dylan', 'Cameron', 'Matthew', 'Micah ', 'Gracie', 'Allison', 'Anna G.', 'Andrew', 'Anna K.', 'Ryan', 'Alex', 'Owen', 'Jillamae', 'Benjamin', 'Jacob', 'Abby', 'Patrick', 'Max', 'Christian']
 
 document.querySelector('#studentBtn').addEventListener('click', pickRandomStudent)
 
