@@ -1,61 +1,124 @@
 //Random Students
 
-const students = ['Jocelyn', 'Noah', 'Dylan', 'Cameron', 'Matthew', 'Micah ', 'Gracie', 'Allison', 'Anna G.', 'Andrew', 'Anna K.', 'Ryan', 'Alex', 'Owen', 'Jillamae', 'Benjamin', 'Jacob', 'Abby', 'Patrick', 'Max', 'Christian']
+const students = [
+  "Jocelyn",
+  "Noah",
+  "Dylan",
+  "Cameron",
+  "Matthew",
+  "Micah ",
+  "Gracie",
+  "Allison",
+  "Anna G.",
+  "Andrew",
+  "Anna K.",
+  "Ryan",
+  "Alex",
+  "Owen",
+  "Jillamae",
+  "Benjamin",
+  "Jacob",
+  "Abby",
+  "Patrick",
+  "Max",
+  "Christian",
+]
 
-document.querySelector('#studentBtn').addEventListener('click', pickRandomStudent)
+document
+  .querySelector("#studentBtn")
+  .addEventListener("click", pickRandomStudent)
 
-function pickRandomStudent(){
-    let randomStudent = students[Math.floor(Math.random() * students.length)]
-    document.querySelector('#studentName').innerText = randomStudent
+function pickRandomStudent() {
+  let randomStudent = students[Math.floor(Math.random() * students.length)]
+  document.querySelector("#studentText").innerText = randomStudent
 }
 
-// Roll Rudiments
+// Flam Rudiments
+const flamRudiments = [
+  "Flam Accent",
+  "Flam Tap",
+  "Flam Paradiddle",
+  "Pata-Flafla",
+  "Single Flammed Mill",
+  "Swiss Army Triplet",
+]
 
-const rudiments = ['Single Stroke Roll', 'Single Stroke Four', 'Single Stroke Seven', 'Multiple Bounce Roll', 'Triple Stroke Roll', 'Double Stroke Roll', 'Five Stroke Roll', 'Six Stroke Roll', 'Seven Stroke Roll', 'Nine Stroke Roll', 'Ten Stroke Roll', 'Eleven Stroke Roll', 'Thirteen Stroke Roll', 'Fifteen Stroke Roll', 'Seventeen Stroke Roll', 'Single Paradiddle', 'Double Paradiddle', 'Triple Paradiddle', 'Paradiddle-diddle']
+document.querySelector("#flamBtn").addEventListener("click", pickFlamRudiment)
 
-document.querySelector('#rollRudimentBtn').addEventListener('click', pickRollRudiment)
-
-function pickRollRudiment(){
-    let randomRoll = rudiments[Math.floor(Math.random() * 9 + 6)]
-    document.querySelector('#rollRudimentName').innerText = randomRoll
+function pickFlamRudiment() {
+  let randomFlam =
+    flamRudiments[Math.floor(Math.random() * flamRudiments.length)]
+  console.log(randomFlam)
+  document.querySelector("#flamText").innerText = randomFlam
 }
 
-// Paradiddle Rudiments
-document.querySelector('#paradiddleRudimentBtn').addEventListener('click', pickParadiddleRudiment)
+// Drag Rudiments
+const dragRudiments = [
+  "Single Drag Tap",
+  "Double Drag Tap",
+  "Lesson 25",
+  "Drag Paradiddle No. 2",
+  "Single Ratamacue",
+]
 
-function pickParadiddleRudiment(){
-    let randomPara = rudiments[Math.floor(Math.random() * 4 + 15)]
-    document.querySelector('#paradiddleRudimentName').innerText = randomPara
+document.querySelector("#dragBtn").addEventListener("click", pickDragRudiment)
+
+function pickDragRudiment() {
+  let randomDrag =
+    dragRudiments[Math.floor(Math.random() * dragRudiments.length)]
+  document.querySelector("#dragText").innerText = randomDrag
 }
 
 // Major Scales
 
-const allMajorScales = ['F Major', 'Bb Major', 'Eb Major', 'Ab Major', 'Db Major', 'Gb Major', 'G Major', 'D Major', 'A Major', 'E Major', 'B Major', 'F# Major']
+const minorScales = [
+  "A Minor",
+  "D Minor",
+  "G Minor",
+  "C Minor",
+  "F Minor",
+  "Bb Minor",
+]
 
-document.querySelector('#majorScaleBtn').addEventListener('click', pickMajorScale)
+document.querySelector("#scaleBtn").addEventListener("click", pickScale)
 
-function pickMajorScale(){
-    let randomScale = allMajorScales[Math.floor(Math.random() * allMajorScales.length)]
-    document.querySelector('#majorScaleName').innerText = randomScale
+function pickScale() {
+  let randomScale = minorScales[Math.floor(Math.random() * minorScales.length)]
+  document.querySelector("#scaleText").innerText = randomScale
 }
 
-
 //Flat Scales
-const flatScales = ['F Major', 'Bb Major', 'Eb Major', 'Ab Major', 'Db Major', 'Gb Major']
+const flatScales = [
+  "F Major",
+  "Bb Major",
+  "Eb Major",
+  "Ab Major",
+  "Db Major",
+  "Gb Major",
+]
 
-document.querySelector('#flatScaleBtn').addEventListener('click', pickFlatScale)
+document.querySelector("#flatScaleBtn").addEventListener("click", pickFlatScale)
 
-function pickFlatScale(){
-    let randomScale = flatScales[Math.floor(Math.random() * flatScales.length)]
-    document.querySelector('#flatScaleName').innerText = randomScale
+function pickFlatScale() {
+  let randomScale = flatScales[Math.floor(Math.random() * flatScales.length)]
+  document.querySelector("#flatScaleName").innerText = randomScale
 }
 
 //Sharp Scales
-const sharpScales = ['G Major', 'D Major', 'A Major', 'E Major', 'B Major', 'F# Major']
+const sharpScales = [
+  "G Major",
+  "D Major",
+  "A Major",
+  "E Major",
+  "B Major",
+  "F# Major",
+]
 
-document.querySelector('#sharpScaleBtn').addEventListener('click', pickSharpScale)
+document
+  .querySelector("#sharpScaleBtn")
+  .addEventListener("click", pickSharpScale)
 
-function pickSharpScale(){
-    let randomScale = sharpScales[Math.floor(Math.random() * sharpScales.length)]
-    document.querySelector('#sharpScaleName').innerText = randomScale
+function pickSharpScale() {
+  let randomScale = sharpScales[Math.floor(Math.random() * sharpScales.length)]
+  document.querySelector("#sharpScaleName").innerText = randomScale
 }
