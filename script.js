@@ -1,22 +1,6 @@
 //Random Students
 
-const students = [
-  "Jocelyn",
-
-  "Cameron",
-  "Matthew",
-
-  "Allison",
-
-  "Anna K.",
-
-  "Benjamin",
-
-  "Abby",
-  "Patrick",
-
-  "Christian",
-]
+const students = ["Allison", "Riley", "Abby", "Patrick", "Christian"]
 
 document
   .querySelector("#studentBtn")
