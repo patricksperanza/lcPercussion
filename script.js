@@ -2,25 +2,19 @@
 
 const students = [
   "Jocelyn",
-  "Noah",
-  "Dylan",
+
   "Cameron",
   "Matthew",
-  "Micah ",
-  "Gracie",
+
   "Allison",
-  "Anna G.",
-  "Andrew",
+
   "Anna K.",
-  "Ryan",
-  "Alex",
-  "Owen",
-  "Jillamae",
+
   "Benjamin",
-  "Jacob",
+
   "Abby",
   "Patrick",
-  "Max",
+
   "Christian",
 ]
 
